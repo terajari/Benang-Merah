@@ -58,11 +58,11 @@ const lang = {
     Look:/^l$|^lihat$|^deskripsikan (?:ruangan|ruangannya|lokasi|lokasinya|di mana saya|di sini)$/,
     Exits:/^keluar$/,
     Map:/^peta$/,
-    Inv:/^inventaris$|^inv$|^i$/,    
+    Inv:/^inventaris$|^tas$|^inventaris$|^i$/,    
 
     // Misc
     Wait:/^tunggu$|^z$/,
-    Smell:/^cium$|^sniff$/,
+    Smell:/^cium$|^endus$/,
     Listen:/^dengar$/,
     PurchaseFromList:/^beli$|^purchase$/,
         
@@ -467,22 +467,22 @@ const lang = {
 
 
   // General command messages
-  not_known_msg:"I don't even know where to begin with that.",
+  not_known_msg:"Aku tidak mengerti apa yang hendak kau lakukan.",
   disambig_msg:"Which do you mean?",
   no_multiples_msg:"You cannot use multiple objects with that command.",
   nothing_msg:"Nothing there to do that with.",
   general_obj_error:"So I kind of get what you want to do, but not what you want to do it with.",
   done_msg:"{multi}Done.",
-  nothing_for_sale:"Nothing for sale here.",
+  nothing_for_sale:"Tidak ada yang dijual di sini.",
   wait_msg:"Waktu berlalu...",
   no_map:"Maaf, peta tidak tersedia.",
-  inventory_prefix:"{nv:char:be:true} carrying",
+  inventory_prefix:"{nv:char:} membawa",
   no_receiver:"There's no one here to give things to.",
 
 
   // General command fails
-  no_smell:"{pv:char:can't:true} smell anything here.",
-  no_listen:"{pv:char:can't:true} hear anything of note here.",
+  no_smell:"{pv:char:tidak dapat:true} mencium apapun di sini.",
+  no_listen:"{pv:char:tidak dapat:true} mendengar apapun di sini.",
   nothing_there:"{nv:char:be:true} sure there's nothing there.",
   nothing_inside:"There's nothing to see inside.",
   not_open:"You have to open it first.",
@@ -680,7 +680,7 @@ const lang = {
   },
 
   aboutScript:function() {
-    metamsg("{i:{show:settings:title} version {show:settings:version}} was written by {show:settings:author} using QuestJS (Quest 6) version {show:settings:questVersion}.", {settings:settings})
+    metamsg("{i:{show:settings:title} versi {show:settings:version}} ditulis oleh {show:settings:author} menggunakan QuestJS (Quest 6) versi {show:settings:questVersion}.", {settings:settings})
     if (settings.ifdb) metamsg("IFDB number: " + settings.ifdb)
     if (settings.thanks && settings.thanks.length > 0) {
       metamsg("{i:Thanks to:} " + formatList(settings.thanks, {lastSep:lang.list_and}) + ".")
@@ -834,32 +834,32 @@ const lang = {
 
   // Display verbs used in the side panel
   verbs:{
-    examine:"Examine",
-    use:"Use",
-    take:"Take",
-    drop:"Drop",
-    open:"Open",
-    close:"Close",
-    switchon:"Switch on",
-    switchoff:"Switch off",
-    wear:"Wear",
-    remove:"Remove",
-    lookat:"Look at",
-    talkto:"Talk to",
-    eat:"Eat",
-    drink:"Drink",
-    read:"Read",
-    push:"Push",
-    equip:"Equip",
-    unequip:"Unequip",
-    attack:"Attack",
-    sitOn:"Sit on",
-    standOn:"Stand on",
-    reclineOn:"Lie on",
-    getOff:"Get off",
-    fill:"Fill",
-    empty:"Empty",
-    turn:"Turn",
+    examine:"Periksa",
+    use:"Gunakan",
+    take:"Ambil",
+    drop:"Jatuhkan",
+    open:"Buka",
+    close:"Tutup",
+    switchon:"Nyalakan",
+    switchoff:"Matikan",
+    wear:"Kenakan",
+    remove:"Lepaskan",
+    lookat:"Lihat",
+    talkto:"Bicara",
+    eat:"Makan",
+    drink:"Minum",
+    read:"Baca",
+    push:"Dorong",
+    equip:"Menggunakan",
+    unequip:"Melepaskan",
+    attack:"Serang",
+    sitOn:"Duduk",
+    standOn:"Berdiri",
+    reclineOn:"Berbaring",
+    getOff:"Turun",
+    fill:"Isi",
+    empty:"Kosongkan",
+    turn:"Belok",
   },
   
   // Flag the state of an item in a list
