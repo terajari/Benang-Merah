@@ -448,7 +448,7 @@ const lang = {
   not_that_way:"{nv:char:can't:true} go {show:dir}.",
   no_look_that_way:"{nv:char:can't:true} see anything of interest {show:dir}.",
   default_look_exit:"{nv:char:look:true} {show:dir}; definitely an exit that way.",
-  can_go:"{nv:char:think:true} {pv:char:can} go {exits}.",
+  can_go:"{nv:char:berpikir:true} {pv:char:dapat} pergi {exits}.",
   cannot_go_in:"{pv:item:be:true} not something {nv:char:can} get inside.",
   cannot_go_out:"{pv:item:be:true} not something from which {nv:char:can} go out.",
   cannot_go_up:"{pv:item:be:true} not something {nv:char:can} go up.",
@@ -474,8 +474,8 @@ const lang = {
   general_obj_error:"So I kind of get what you want to do, but not what you want to do it with.",
   done_msg:"{multi}Done.",
   nothing_for_sale:"Nothing for sale here.",
-  wait_msg:"Time passes...",
-  no_map:"Sorry, no map available.",
+  wait_msg:"Waktu berlalu...",
+  no_map:"Maaf, peta tidak tersedia.",
   inventory_prefix:"{nv:char:be:true} carrying",
   no_receiver:"There's no one here to give things to.",
 
@@ -789,7 +789,7 @@ const lang = {
   list_and:"dan",
   list_nothing:"apapun",
   list_or:"atau",
-  list_nowhere:"tidak di mana-mana",
+  list_nowhere:"ke mana-mana",
   never_mind:"Tidak apa-apa.",
   default_description:"Hanya sebuah pemandangan.",
   click_to_continue:"Klik untuk melanjutkan...",
@@ -828,7 +828,7 @@ const lang = {
     nonbinary:{subjective:"they", objective:"them", possessive: "theirs", possAdj: "their", reflexive:"themselves"},
     plural:{subjective:"they", objective:"them", possessive: "theirs", possAdj: "their", reflexive:"themselves"},
     firstperson:{subjective:"I", objective:"me", possessive: "mine", possAdj: "my", reflexive:"myself"},
-    secondperson:{subjective:"you", objective:"you", possessive: "yours", possAdj: "your", reflexive:"yourself"},
+    secondperson:{subjective:"kamu", objective:"kamu", possessive: "yours", possAdj: "your", reflexive:"yourself"},
   },
 
 
@@ -915,7 +915,7 @@ const lang = {
       { name:"'be", value:"'m"},
       { name:"were", value:"was"},  // Used in present tense for, eg "I was going to do that"
     ],
-    you:[
+    kamu:[
       { name:"be", value:"are"},
       { name:"'be", value:"'re"},
     ],
